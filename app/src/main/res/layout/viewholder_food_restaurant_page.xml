@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/food_respage_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="4dp"
+    android:elevation="6dp"
+    >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/food_respage_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/burger_1"
+        app:shapeAppearanceOverlay="@style/roundImageView"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Beef Burger"
+        android:fontFamily="sans-serif-black"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@id/food_respage_pic"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/sizeS"
+        style="@style/smlStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="S"
+        app:layout_constraintStart_toStartOf="@id/name"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginTop="6dp"
+        android:elevation="10dp" />
+
+    <ImageView
+        android:id="@+id/circleSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sizeS"
+        app:layout_constraintStart_toEndOf="@id/sizeS"
+        app:layout_constraintTop_toTopOf="@id/sizeS"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+
+    <TextView
+        android:id="@+id/sizeM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/smlStyle"
+        android:text="M"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintStart_toEndOf="@id/circleSize"
+        app:layout_constraintTop_toTopOf="@id/sizeS"
+        android:elevation="10dp" />
+    <ImageView
+        android:id="@+id/circleSize2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/sizeM"
+        app:layout_constraintStart_toEndOf="@id/sizeM"
+        app:layout_constraintTop_toTopOf="@id/sizeM"
+        app:srcCompat="@drawable/ic_baseline_circle_24" />
+    <TextView
+        android:id="@+id/sizeL"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/smlStyle"
+        android:text="L"
+        android:layout_marginHorizontal="8dp"
+
+        app:layout_constraintStart_toEndOf="@id/circleSize2"
+        app:layout_constraintTop_toTopOf="@id/sizeM"
+        android:elevation="10dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="$12,99"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="@id/sizeS"
+        app:layout_constraintTop_toBottomOf="@id/sizeS"
+        android:textStyle="bold"/>
+
+    <ImageButton
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:background="@drawable/orange_bg"
+        app:layout_constraintBottom_toBottomOf="@id/sizeL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/sizeL" />
+</androidx.constraintlayout.widget.ConstraintLayout>
