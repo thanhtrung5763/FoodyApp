@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="roundImageView" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="roundImageViewProfile" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">30dp</item>
+        <item name="color">@color/white</item>
+    </style>
+    <style name="smlStyle" parent="">
+        <item name="android:textSize">12dp</item>
+        <item name="fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="smlStyleFoodDetails" parent="">
+        <item name="android:textSize">18dp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="Bottom_Selection">
+        <item name="android:layout_marginHorizontal">18dp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">#ffde0a</item>
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#e8e8e8</item>
+    </style>
+</resources>
