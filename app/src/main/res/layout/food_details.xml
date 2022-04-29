@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="match_parent"
+                android:layout_height="330dp"
+                app:srcCompat="@drawable/kisspng_hamburg_" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sizeS"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    style="@style/smlStyleFoodDetails"
+                    android:text="S"
+                    android:background="@drawable/circle_white_bg"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sizeM"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    style="@style/smlStyleFoodDetails"
+                    android:text="M"
+                    android:textColor="@color/black"
+                    android:background="@drawable/circle_white_bg"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginEnd="32dp"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sizeL"
+                    android:background="@drawable/circle_white_bg"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    style="@style/smlStyleFoodDetails"
+                    android:text="L"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/quantity_bg"
+                android:padding="10dp">
+                <ImageButton
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_baseline_remove_16"
+                    android:background="@drawable/circle_white_bg"
+                    app:layout_constraintBottom_toBottomOf="@id/sizeL"
+                    app:layout_constraintStart_toEndOf="@id/sizeL"
+                    app:layout_constraintTop_toTopOf="@id/sizeL" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="18dp"
+                    style="@style/smlStyleFoodDetails"
+                    android:textAlignment="center"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"/>
+                <ImageButton
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:elevation="2dp"
+                    android:src="@drawable/ic_baseline_add_16"
+                    android:background="@drawable/circle_white_bg"
+                    app:layout_constraintBottom_toBottomOf="@id/sizeL"
+                    app:layout_constraintStart_toEndOf="@id/sizeL"
+                    app:layout_constraintTop_toTopOf="@id/sizeL" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beef Burger"
+                    android:fontFamily="sans-serif-black"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25 mins"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@id/name"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:drawableStart="@drawable/ic_baseline_access_time_24"
+                    android:drawablePadding="6dp"
+                    app:layout_constraintTop_toTopOf="@id/name" />
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/name"
+                    app:layout_constraintStart_toStartOf="@id/name"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:fontFamily="sans-serif-light"
+                    android:text="@string/description_burger"/>
+                <TextView
+                    android:id="@+id/tvtotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-light"
+                    android:textColor="#8A8989"
+                    app:layout_constraintTop_toBottomOf="@id/description"
+                    app:layout_constraintStart_toStartOf="@id/description"
+                    android:layout_marginTop="24dp"/>
+                <TextView
+                    android:id="@+id/totalPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="$10,99"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvtotal"
+                    app:layout_constraintStart_toStartOf="@id/tvtotal"
+                    android:layout_marginTop="4dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="@id/tvtotal"
+                    app:layout_constraintBottom_toBottomOf="@id/totalPrice"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="Add to Cart"
+                    android:textSize="18dp"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:paddingStart="25dp"
+                    android:paddingEnd="25dp"
+                    android:drawableEnd="@drawable/ic_baseline_add_circle_outline_20"
+                    android:drawablePadding="10dp"
+                    android:elevation="2dp"
+
+                    android:background="@drawable/add_to_cart_bg" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
