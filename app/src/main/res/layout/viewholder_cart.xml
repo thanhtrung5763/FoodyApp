@@ -3,11 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_margin="16dp">
+    android:layout_marginVertical="8dp"
+    android:paddingHorizontal="4dp"
+    android:paddingVertical="4dp"
+    android:layout_marginHorizontal="2dp"
+    android:background="@drawable/food_respage_bg"
+    android:elevation="2dp">
     <ImageButton
         android:elevation="3dp"
-        android:layout_marginStart="6dp"
-        android:id="@+id/cancel_button"
+        android:id="@+id/remove_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_outline_close_24"
@@ -15,29 +19,29 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/circle_white_bg"/>
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/imgProduct"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginVertical="6dp"
-        app:layout_constraintTop_toTopOf="@id/cancel_button"
-        app:layout_constraintBottom_toBottomOf="@id/cancel_button"
-        app:layout_constraintStart_toEndOf="@id/cancel_button"
-        android:src="@drawable/kisspng_hamburg_"/>
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/remove_button"
+        app:layout_constraintBottom_toBottomOf="@id/remove_button"
+        app:layout_constraintStart_toEndOf="@id/remove_button"
+        app:srcCompat="@drawable/burger_1"
+        app:shapeAppearanceOverlay="@style/roundImageView"/>
     <TextView
         android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Pigeon Burger"
+        android:text="Botanica Homemade BreadHomemade Bread"
         android:fontFamily="sans-serif-black"
         android:textStyle="bold"
         android:textColor="@color/black"
         android:textSize="16dp"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@id/imgProduct"
-        app:layout_constraintTop_toTopOf="@id/imgProduct"/>
+        app:layout_constraintEnd_toStartOf="@id/qtylayout"
+        app:layout_constraintTop_toTopOf="parent"/>
     <TextView
         android:id="@+id/size"
         style="@style/smlStyle"
@@ -46,12 +50,9 @@
         android:text="Size: M"
         app:layout_constraintStart_toStartOf="@id/name"
         app:layout_constraintTop_toBottomOf="@id/name"
+        app:layout_constraintBottom_toTopOf="@id/price"
         android:layout_marginTop="6dp"
-        android:paddingHorizontal="4dp"
         android:elevation="10dp" />
-
-
-
     <TextView
         android:id="@+id/price"
         android:layout_width="wrap_content"
@@ -63,18 +64,21 @@
         android:textSize="16dp"
         app:layout_constraintStart_toStartOf="@id/size"
         app:layout_constraintTop_toBottomOf="@id/size"
+        app:layout_constraintBottom_toBottomOf="parent"
         android:textStyle="bold"/>
     <LinearLayout
+        android:id="@+id/qtylayout"
         android:layout_width="wrap_content"
         android:layout_height="37dp"
         android:layout_gravity="center"
         android:orientation="horizontal"
         android:background="@drawable/quantity_bg"
         android:padding="9dp"
-        app:layout_constraintTop_toTopOf="@id/name"
+        app:layout_constraintTop_toTopOf="@id/imgProduct"
         app:layout_constraintBottom_toBottomOf="@id/imgProduct"
         app:layout_constraintEnd_toEndOf="parent">
         <ImageButton
+            android:id="@+id/minus"
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:elevation="2dp"
@@ -94,6 +98,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"/>
         <ImageButton
+            android:id="@+id/plus"
             android:layout_width="18dp"
             android:layout_height="18dp"
             android:elevation="2dp"
