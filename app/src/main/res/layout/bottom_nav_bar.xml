@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/bottom_nav_bar"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--    app:layout_constraintEnd_toEndOf="parent"-->
+<!--    app:layout_constraintStart_toStartOf="parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+<!--    <com.google.android.material.bottomappbar.BottomAppBar-->
+<!--        android:id="@+id/app_bar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="bottom"-->
+<!--        android:backgroundTint="#F8F8F8"-->
+<!--        app:contentInsetStart="0dp"-->
+<!--        app:contentInsetEnd="0dp">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/explore_tab"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageViewExplore"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ic_outline_explore_24" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/favorite_tab"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageViewFav"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ic_outline_favorite_border_24" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/search_tab"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageViewSearch"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ic_baseline_search_24" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/order_tab"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:orientation="vertical">-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageViewOrd"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ic_baseline_restore_24" />-->
+<!--            </LinearLayout>-->
+<!--            <LinearLayout-->
+<!--                android:id="@+id/profile_tab"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_weight="0.2"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/imageViewProf"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    app:srcCompat="@drawable/ic_outline_person_outline_24" />-->
+<!--            </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--    </com.google.android.material.bottomappbar.BottomAppBar>-->
+<!--    &lt;!&ndash;        <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:elevation="3dp"&ndash;&gt;-->
+<!--    &lt;!&ndash;            android:src="@drawable/ic_baseline_shopping_cart_black_24"&ndash;&gt;-->
+<!--    &lt;!&ndash;            app:layout_anchor="@id/app_bar">&ndash;&gt;-->
+
+<!--    &lt;!&ndash;        </com.google.android.material.floatingactionbutton.FloatingActionButton>&ndash;&gt;-->
+
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+<com.google.android.material.bottomnavigation.BottomNavigationView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_navigation"
+    app:itemIconTint="@drawable/selector_nav_bar"
+    app:menu="@menu/bottom_nav_menu"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:background="#F8F8F8"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
