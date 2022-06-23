@@ -3,47 +3,137 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.22037037037037038" />
+        <entry key="app/src/main/res/drawable-mdpi/circle_white_bg.xml" value="0.293" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/about_us_bg.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/add_to_cart_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/blur_img.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/bottom_line.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/cart_bg.xml" value="0.209" />
         <entry key="app/src/main/res/drawable/cat_background.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/cat_background1.xml" value="0.18" />
         <entry key="app/src/main/res/drawable/cat_background2.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/cat_background3.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/cat_background4.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/cat_background5.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/checkbox_btn.xml" value="0.1115" />
+        <entry key="app/src/main/res/drawable/circle_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/circle_yellow_60_bg.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/circle_yellow_80_bg.xml" value="0.265" />
         <entry key="app/src/main/res/drawable/edit_text_bg.xml" value="0.375" />
+        <entry key="app/src/main/res/drawable/facebook.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/feedback_bg.xml" value="0.2765" />
         <entry key="app/src/main/res/drawable/filter.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/filter_bg.xml" value="0.2585" />
+        <entry key="app/src/main/res/drawable/food_respage_bg.xml" value="0.272" />
+        <entry key="app/src/main/res/drawable/free_deli_bg.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/get_started_arrow.xml" value="0.2145" />
         <entry key="app/src/main/res/drawable/google.xml" value="0.1685" />
+        <entry key="app/src/main/res/drawable/help_bg.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_about_us_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_16.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_baseline_access_time_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_16.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_circle_outline_20.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_attach_money_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/ic_baseline_explore_24.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24_bottom_navbar.xml" value="0.119" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_48.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorited_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorited_48.xml" value="0.164" />
+        <entry key="app/src/main/res/drawable/ic_baseline_feedback_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_heart_broken_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_baseline_help_24.xml" value="0.2765" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_left_24.xml" value="0.2435" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.2585" />
+        <entry key="app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_48.xml" value="0.292" />
+        <entry key="app/src/main/res/drawable/ic_baseline_local_offer_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_logout_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_manage_accounts_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_payment_24.xml" value="0.2765" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_baseline_remove_16.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_remove_24.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/ic_baseline_restore_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2585" />
+        <entry key="app/src/main/res/drawable/ic_baseline_shopping_cart_black_24.xml" value="0.2585" />
         <entry key="app/src/main/res/drawable/ic_baseline_star_24.xml" value="0.335" />
+        <entry key="app/src/main/res/drawable/ic_baseline_support_24.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_watch_later_24.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/ic_group_946_mdpi.xml" value="0.1685" />
         <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.2055" />
+        <entry key="app/src/main/res/drawable/ic_outline_close_24.xml" value="0.2585" />
+        <entry key="app/src/main/res/drawable/ic_outline_explore_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_outline_favorite_border_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_outline_person_outline_24.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/ic_outline_shopping_cart_30.xml" value="0.2585" />
+        <entry key="app/src/main/res/drawable/ic_sharp_check_24.xml" value="0.2575" />
+        <entry key="app/src/main/res/drawable/ic_sharp_check_24_transparent.xml" value="0.2575" />
         <entry key="app/src/main/res/drawable/login_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/login_bg_orange.xml" value="0.2575" />
         <entry key="app/src/main/res/drawable/login_button.xml" value="0.193" />
+        <entry key="app/src/main/res/drawable/noti_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/orange_bg.xml" value="0.272" />
         <entry key="app/src/main/res/drawable/orange_button.xml" value="0.2095" />
+        <entry key="app/src/main/res/drawable/payment_bg.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/promote_button.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/promotion_bg.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/quantity_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/respg_info_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/rounded_button.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/sale_10_percent_bg.xml" value="0.24" />
         <entry key="app/src/main/res/drawable/sale_30_percent_btn.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/sale_50_percent_bg.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/search.xml" value="0.293" />
         <entry key="app/src/main/res/drawable/search_bg.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/search_bg_orange.xml" value="0.2575" />
+        <entry key="app/src/main/res/drawable/selector_nav_bar.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/selector_product_size.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/selector_product_size_text.xml" value="0.265" />
+        <entry key="app/src/main/res/drawable/setting_bg.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/tab_indicator.xml" value="0.2765" />
+        <entry key="app/src/main/res/drawable/twitter.xml" value="0.2055" />
         <entry key="app/src/main/res/drawable/viewholder_discover.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/white_bg.xml" value="0.272" />
         <entry key="app/src/main/res/layout/activity_bottom_navigation.xml" value="0.28804347826086957" />
-        <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_intro.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_fake_main.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_favorite.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_get_started.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_intro.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.2548476454293629" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/activity_order.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/bottom_nav_bar.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/cart.xml" value="0.3201219512195122" />
+        <entry key="app/src/main/res/layout/cart_page.xml" value="0.3734375" />
+        <entry key="app/src/main/res/layout/filter_bottomsheet_layout.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/food_details.xml" value="0.45" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.23385416666666667" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.23385416666666667" />
-        <entry key="app/src/main/res/layout/login_tab_fragment.xml" value="0.19791666666666666" />
+        <entry key="app/src/main/res/layout/login_tab_fragment.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/profile_fragment.xml" value="0.25" />
         <entry key="app/src/main/res/layout/register_tab_fragment.xml" value="0.19791666666666666" />
-        <entry key="app/src/main/res/layout/signup_tab_fragment.xml" value="0.28804347826086957" />
+        <entry key="app/src/main/res/layout/restaurant_page.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/signup_tab_fragment.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/viewholder_cart.xml" value="0.335" />
         <entry key="app/src/main/res/layout/viewholder_category.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/viewholder_discover.xml" value="0.45" />
+        <entry key="app/src/main/res/layout/viewholder_cuisines.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/viewholder_discover.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/viewholder_favorite.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/viewholder_food_restaurant_page.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/viewholder_order.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/viewholder_search.xml" value="0.4194977843426883" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3290217081705729" />
       </map>
     </option>
