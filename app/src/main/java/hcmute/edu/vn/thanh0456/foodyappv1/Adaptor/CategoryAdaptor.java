@@ -1,5 +1,7 @@
 package hcmute.edu.vn.thanh0456.foodyappv1.Adaptor;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,11 +19,13 @@ import java.util.ArrayList;
 
 import hcmute.edu.vn.thanh0456.foodyappv1.Domain.CategoryDomain;
 import hcmute.edu.vn.thanh0456.foodyappv1.R;
+import hcmute.edu.vn.thanh0456.foodyappv1.activity.SearchActivity;
 
 public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHolder> {
     ArrayList<CategoryDomain>categoryDomains;
-
-    public CategoryAdaptor(ArrayList<CategoryDomain> categoryDomains) {
+    private Context mcontext;
+    public CategoryAdaptor(Context context, ArrayList<CategoryDomain> categoryDomains) {
+        this.mcontext = context;
         this.categoryDomains = categoryDomains;
     }
 
@@ -33,55 +37,34 @@ public class CategoryAdaptor extends RecyclerView.Adapter<CategoryAdaptor.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.categoryName.setText(categoryDomains.get(position).getTitle());
-        String picUrl = "";
-        switch (position) {
-            case 0: {
-                picUrl = "cat_1";
-                holder.categoryPic.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background1));
-                break;
-            }
-            case 1: {
-                picUrl = "cat_2";
-                holder.categoryPic.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background2));
-                break;
-            }
-            case 2: {
-                picUrl = "cat_3";
-                holder.categoryPic.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background3));
-                break;
-            }
-            case 3: {
-                picUrl = "cat_4";
-                holder.categoryPic.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background4));
-                break;
-            }
-            case 4: {
-                picUrl = "cat_5";
-                holder.categoryPic.setBackground(ContextCompat.getDrawable(holder.itemView.getContext(), R.drawable.cat_background5));
-                break;
-            }
-        }
+//        holder.categoryName.setText(categoryDomains.get(position).getTitle());
+        String picUrl = categoryDomains.get(position).getPic();
+
         int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(picUrl, "drawable", holder.itemView.getContext().getPackageName());
         Glide.with(holder.itemView.getContext())
                 .load(drawableResourceId)
                 .into(holder.categoryPic);
+        holder.layoutItem.setOnClickListener(view -> {
+            Intent intent = new Intent(mcontext, SearchActivity.class);
+            intent.putExtra("s_query", categoryDomains.get(position).getTitle());
+            mcontext.startActivity(intent);
+        });
     }
-
+    public void release() {
+        mcontext = null;
+    }
     @Override
     public int getItemCount() {
         return categoryDomains.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView categoryName;
         ImageView categoryPic;
-        ConstraintLayout mainLayout;
+        ConstraintLayout layoutItem;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            categoryName = itemView.findViewById(R.id.categoryName);
             categoryPic = itemView.findViewById(R.id.categoryPic);
-            mainLayout = itemView.findViewById(R.id.main_layout);
+            layoutItem = itemView.findViewById(R.id.layoutItem);
         }
     }
 
