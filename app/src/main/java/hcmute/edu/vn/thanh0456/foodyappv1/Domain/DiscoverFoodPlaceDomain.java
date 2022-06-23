@@ -1,36 +1,52 @@
 package hcmute.edu.vn.thanh0456.foodyappv1.Domain;
 
-public class DiscoverFoodPlaceDomain {
-    private String pic;
-    private String restaurant;
+import java.io.Serializable;
+
+public class DiscoverFoodPlaceDomain implements Serializable {
+    private int id;
+    private String name;
+    private String type;
     private String address;
+    private int serve_time;
     private Double score;
     private int rating;
+    private String img;
     private String promotion;
 
-    public DiscoverFoodPlaceDomain(String pic, String restaurant, String address, Double score, int rating, String promotion) {
-        this.pic = pic;
-        this.restaurant = restaurant;
+    public DiscoverFoodPlaceDomain(int id, String name, String type, String address, int serve_time, Double score, int rating, String img, String promotion) {
+        this.id = id;
+        this.name = name;
+        this.type = type;
         this.address = address;
+        this.serve_time = serve_time;
         this.score = score;
         this.rating = rating;
+        this.img = img;
         this.promotion = promotion;
     }
 
-    public String getPic() {
-        return pic;
+    public int getId() {
+        return id;
     }
 
-    public void setPic(String pic) {
-        this.pic = pic;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getRestaurant() {
-        return restaurant;
+    public String getName() {
+        return name;
     }
 
-    public void setRestaurant(String restaurant) {
-        this.restaurant = restaurant;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getAddress() {
@@ -39,6 +55,14 @@ public class DiscoverFoodPlaceDomain {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public int getServe_time() {
+        return serve_time;
+    }
+
+    public void setServe_time(int serve_time) {
+        this.serve_time = serve_time;
     }
 
     public Double getScore() {
@@ -55,6 +79,14 @@ public class DiscoverFoodPlaceDomain {
 
     public void setRating(int rating) {
         this.rating = rating;
+    }
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
     }
 
     public String getPromotion() {
